@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Daiana Celeste Lopez",
   description: "Mi porfolio profesional",
+   icons: {
+    icon: "/avatars/happy-icon.png",
+  },
 };
 
 export default function RootLayout({

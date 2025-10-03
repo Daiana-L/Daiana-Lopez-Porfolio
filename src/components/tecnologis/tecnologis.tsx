@@ -8,7 +8,7 @@ const technologies = [
   { name: "TypeScript", img: "/TS.png" },
   { name: "Tailwind CSS", img: "/TW.png" },
   { name: "JavaScript", img: "/JS.png" },
-  { name: "SQL", img: "/SQl.png" },
+  { name: "SQL", img: "/sql.png" },
 ];
 
 function Tecnologis() {
