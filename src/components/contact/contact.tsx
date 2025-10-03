@@ -91,7 +91,7 @@ function Contact() {
           {/* Cartas */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mt-8">
             <a
-              href="https://www.linkedin.com/in/tu-linkedin"
+              href="https://www.linkedin.com/in/daiana-celeste-lopez/"
               target="_blank"
               className="flex flex-col items-center justify-center gap-2 p-6 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition w-full sm:w-auto"
             >
