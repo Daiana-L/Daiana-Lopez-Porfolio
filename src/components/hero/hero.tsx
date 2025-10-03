@@ -44,16 +44,16 @@ function Hero() {
         con experiencia en bases de datos (MySQL, MongoDB), integración de APIs REST y 
         optimización de interfaces responsivas.
       </p>
-      <p className="mb-3 gap-1 font-medium flex items-center justify-center md:justify-start text-gray-400">
-        <PiMapPinLine size={24} /> Buenos Aires, Argentina
+      <p className="gap-1 font-medium flex items-center justify-center md:justify-start text-gray-400 mb-2">
+        <PiMapPinLine size={24} className='mb-1'/> Buenos Aires, Argentina
       </p>
-      <p className="mb-4 text-gray-300 text-sm sm:text-base text-center md:text-left">
-        Tecnologías: React, Next.js, TypeScript, JavaScript, Zustand, Tailwind CSS, SQL
+        <p className="mb-4 text-gray-300 text-sm sm:text-base text-center md:text-left">
+       Para conocerme mas personalmente puede usar mi chat de IA personalizado!
       </p>
       <a
         href="/Daiana-Lopez-Desarrolladora-Frontend.pdf"
         download
-        className="inline-block bg-sky-600 text-white px-5 sm:px-6 py-3 rounded-lg hover:bg-sky-700 transition mb-10"
+        className="inline-block text-xl bg-sky-600 text-white px-8 sm:px-6 py-4 rounded-lg hover:bg-sky-700 transition mb-10"
       >
         Descargar CV
       </a>
