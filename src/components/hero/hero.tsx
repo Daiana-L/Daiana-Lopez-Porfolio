@@ -53,7 +53,7 @@ function Hero() {
       <a
         href="/Daiana-Lopez-Desarrolladora-Frontend.pdf"
         download
-        className="inline-block text-xl bg-sky-600 text-white px-8 sm:px-6 py-4 rounded-lg hover:bg-sky-700 transition mb-10"
+        className="inline-block sm:text-xl bg-sky-600 text-white px-8 sm:px-6 py-4 rounded-lg hover:bg-sky-700 transition mb-10"
       >
         Descargar CV
       </a>
