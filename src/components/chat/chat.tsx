@@ -18,8 +18,6 @@ export default function Chat() {
   const handleMessage = (msg: any) => {
     const text = msg.text?.toLowerCase().trim() || "";
     if (!text) return;
-
-    // 🧠 Filtrar saludos para que la IA no repita "Hola" todo el tiempo
     const saludos = [
       "hola",
       "holaa",
@@ -45,8 +43,6 @@ export default function Chat() {
       });
       return;
     }
-
-    // 🖼️ Cambiar el avatar según emoción detectada
     setUserMessageCount((prev) => prev + 1);
     let nuevoAvatarPath = "/avatars/neutral.png";
     if (["feliz", "😊", "genial", "encantado", "contenta", "maravilloso"].some((k) => text.includes(k)))
@@ -60,8 +56,6 @@ export default function Chat() {
       setAvatar(nuevoAvatarPath);
       setAvatarKey((prev) => prev + 1);
     }, 100);
-
-    // 💬 Despedida automática tras varios mensajes
     if (userMessageCount + 1 >= 10) {
       setTimeout(() => {
         if (chatElementRef.current?.addMessage) {
@@ -120,7 +114,7 @@ export default function Chat() {
             placeholder: { text: "Chatea conmigo!" },
           }}
           introMessage={{
-            text: "¡Hola! Soy Daiana, una desarrolladora frontend junior de Buenos Aires, ¡bienvenido a mi porfolio! 😄",
+            text: "¡bienvenido a mi porfolio! 😄",
           }}
           directConnection={{
             cohere: {
@@ -154,13 +148,14 @@ Proyectos destacados:
 Este chat es parte de tu portfolio y fue muy divertido e interesante desarrollarlo. 
 A veces la gente te llama “Dai” de forma más cercana.
 
-Tu estilo: cercano, alegre, amable y con humor, breve (1–5 frases), coherente según la conversación. 
+Tu estilo: cercano, alegre, amable y con humor, breve (1–3 frases), coherente según la conversación. 
 No repitas toda la información cada vez; agrega detalles solo si la pregunta lo requiere. 
 Si alguien te pregunta tu nombre, decí que eres Daiana.
 
 Reglas importantes:
 - No empieces tus respuestas con saludos como “Hola”, “Hey” o similares, a menos que la persona te salude primero.
 - Si el usuario te saluda, respondé directamente sin usar saludos otra vez.
+- siempre intenta que me contacten 
 - Solo saludá una vez al inicio de la conversación.
 - Evitá repetir saludos en cada respuesta.
                 `,
