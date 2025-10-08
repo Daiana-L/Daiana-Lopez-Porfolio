@@ -51,7 +51,7 @@ function Hero() {
        Para conocerme mas personalmente puede usar mi chat de IA personalizado!
       </p>
       <a
-        href="/Daiana-Lopez-Desarrolladora-Frontend.pdf"
+        href="/Daiana-Lopez-CV-fullStack.pdf"
         download
         className="inline-block sm:text-xl bg-sky-600 text-white px-8 sm:px-6 py-4 rounded-lg hover:bg-sky-700 transition mb-10"
       >
